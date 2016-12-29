@@ -1,0 +1,20 @@
+# Header
+menu:
+    Home: /
+    Archives: archives
+    Categories: categories
+    Tags: tags
+    About: about
+
+# Widgets:
+widgets:
+    - recent_posts
+    - category
+    - archive
+    - tag
+    - tagcloud
+    - links
+
+# Search
+search:
+    insight: true

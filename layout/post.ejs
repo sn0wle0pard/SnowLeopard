@@ -1,0 +1,4 @@
+<%- partial('_partial/article', { post: page}) %>
+<% if (config.disqus_shortname) { %>
+    <%- partial('_widget/disqus') %>
+<% } %>
