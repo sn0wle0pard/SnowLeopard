@@ -1,4 +1,10 @@
-<h3><%- post.title %></h3>
+<header id="article-title" class="text-center">
+    <h1><%- post.title %></h1>
+    <div id="time">
+    <time datetime="<%= date_xml(post.date) %>" itemprop="datePublished"><%=
+    date(post.date, null) %></time>
+    </div>
+</header>
 <section>
     <%- post.content %>
 </section>

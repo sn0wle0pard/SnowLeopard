@@ -42,5 +42,21 @@ body
 #content
     margin-top: 5.5em
 
+#article
+    @import "_partial/article"
+
+#article-title
+    border-bottom: 1px solid color-light-grey
+    padding-top: 1rem
+    margin-bottom: 3rem
+    > h1
+        font-weight: 800
+    #time
+        margin-bottom: 1.5em
+
+.text-center
+    text-align: center !important;
+
 @import "_util/grid"
 @import "_partial/header"
+@import "_util/typo"
