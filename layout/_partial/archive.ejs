@@ -1,6 +1,16 @@
-<% page.posts.each(function(post, i) { %>
-    <a href="<%- url_for(post.path) %>"><%-post.title %></a>
-<% }) %>
+<div style="padding: 2em 0">
+    <ul id="post-list">
+    <% page.posts.each(function(post, i) { %>
+        <li class="text-center">
+            <a href="<%- url_for(post.path) %>">
+                <h3>
+                    <%-post.title %>
+                </h3>
+            </a>
+        </li>
+    <% }) %>
+    </ul>
+</div>
 <% if (page.total > 1){ %>
     <nav id="page-nav">
         <%- paginator({
