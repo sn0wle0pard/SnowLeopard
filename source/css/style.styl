@@ -1,8 +1,6 @@
 @import "nib"
 @import "_variables"
 
-global-reset()
-
 @font-face
     font-family: 'Spoqa Han Sans'
     font-weight: 700
@@ -50,7 +48,9 @@ body
     margin-top: 5rem
 
 #article
-    @import "_partial/article"
+    line-height: 1.6em 
+
+@import "_partial/article"
 
 #article-title
     border-bottom: 1px solid color-light-grey
@@ -67,6 +67,7 @@ body
     > li
         padding: 2em 0
         border-bottom: 1px solid color-light-grey
+        list-style: none
         > a
             text-decoration: none
 
@@ -74,9 +75,9 @@ body
     text-align: center !important;
 
 .article-comment
-    margin: 2rem 0
+    margin: 0.5rem 0
 
 @import "_util/grid"
 @import "_partial/header"
 @import "_partial/footer"
-@import "_util/typo"
+@import "_util/typo.styl"
