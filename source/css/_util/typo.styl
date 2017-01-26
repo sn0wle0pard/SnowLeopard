@@ -1,40 +1,67 @@
 h1, h2, h3, h4, h5, h6
-    margin-top: 0
-    margin-bottom: .5rem
+    position: relative
+    margin-top: 1rem
+    margin-bottom: 1rem
     font-fammily: inherit
-    font-weight: 500
-    line-height: 1.1
-    color: inherit
+    font-weight: bold
+    line-height: 1.4
+    color: text
+    &:hover a.anchor
+        text-decoration: none
 
 h1
-    font-size: 2.5rem
-    line-height: 1.2em
-    text-indent: -3px
-    margin: 0.67em 0
-
-h2, h3
-    orphans: 3
-    widows: 3
-    page-break-after: avoid
+    padding-bottom: .3em
+    font-size: 2.25em
+    line-height: 1.2
+    border-bottom: 1px solid #eee
 
 h2
-    font-size: 2rem
-    line-height: 1.5em
+    padding-bottom: .3em
+    font-size: 1.75em
+    line-height: 1.2
+    border-bottom: 1px solid #eee
 
 h3
-    font-size: 1.75rem
+    font-size: 1.5em
+    line-height: 1.43
 
 h4
-    font-size: 1.5rem
+    font-size: 1.25rem
 
 h5
-    font-size: 1.25rem
+    font-size: 1rem
 
 h6
     font-size: 1rem
+    color: #777
+
+p, blockquote, ul, ol, dl, table
+    margin: 0.8em 0
+
+li>ol, li>ul
+    margin: 0
+
+hr
+    height: 4px
+    padding: 0
+    margin: 16px 0
+    background-color: #e7e7e7
+    border: 0 none
+    overflow: hidden
+    box-sizing: content-box
+    border-bottom: 1px solid #ddd
+
+p > code, strong > code, tt
+    border: 1px solid #ddd
+    background-color: #f8f8f8
+    border-radius: 3px
+    padding: 0
+    font-fammily: Consolas, "Liberation Mono", Courier, monospace
+    padding: 2px 4px 0px 4px
+    font-size: 0.9em
 
 blockquote
-    margin-top: 10px
-    margin-bottom: 10px
-    padding-left: 15px
-    border-left: 3px solid #ccc
+    border-left: 4px solid #dddddd
+    padding: 0 15px
+    color: #777777
+
