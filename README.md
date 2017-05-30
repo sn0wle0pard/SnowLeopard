@@ -1,2 +1,2 @@
-# SnowLeopard
-Hexo Theme
+# Snow Leopard
+Hexo Theme Snow Leopard
