@@ -18,3 +18,7 @@ widgets:
 # Search
 search:
     insight: true
+
+icons:
+    facebook: icon/facebook.svg
+    twitter: icon/twitter.svg

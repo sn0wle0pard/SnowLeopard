@@ -1,0 +1,158 @@
+@import "./_font.scss";
+@import "./_post.scss";
+
+* {
+    box-sizing: border-box;
+    font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif';
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.6;
+
+  @media (min-width: 38em) {
+    font-size: 20px;
+  }
+}
+
+body {
+  color: #515151;
+  background-color: #fff;
+}
+
+.masthead {
+
+  &-title {
+    font-weight: 300;
+
+    a {
+      color: #333;
+
+      &:hover,
+      &:focus {
+        text-decoration: none;
+      }
+    }
+
+    span {
+      color: #ddd;
+    }
+
+  }
+
+  &-title--small {
+    margin-bottom: .75rem;
+    font-size: .75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+
+    a {
+      color: #333;
+
+      &:hover,
+      &:focus {
+        text-decoration: none;
+      }
+    }
+  }
+
+  .masthead-nav {
+    margin-bottom: 2rem;
+
+    a {
+      color: #aaa;
+      font-weight: 300;
+      text-transform: lowercase;
+      -webkit-transition: all .2s ease;
+         -moz-transition: all .2s ease;
+              transition: all .2s ease;
+
+      &:hover,
+      &:focus {
+        color: #333;
+        text-decoration: none;
+      }
+
+      + a {
+        margin-left: .25rem;
+      }
+    }
+  }
+
+}
+
+.page {
+  &-title {
+    margin-bottom: 2rem;
+  }
+}
+
+.post {
+  &-title {
+    margin-bottom: .25rem;
+  }
+  &-date {
+    margin-bottom: 2rem;
+    font-size: .75rem;
+    text-transform: uppercase;
+  }
+}
+
+.list {
+  &-post-title {
+    margin-bottom: .25rem;
+
+    a {
+      color: #333;
+
+      &:hover,
+      &:focus {
+        text-decoration: none;
+      }
+    }
+  }
+  &-post-date {
+    margin-bottom: 1rem;
+    font-size: .75rem;
+    text-transform: uppercase;
+  }
+}
+
+.projects-list {
+  a {
+    color: #333;
+  }
+}
+
+#article-title {
+    padding-bottom: 2rem;
+}
+
+#article-tag {
+  padding-bottom: 1rem;
+  a {
+      margin-right: .25rem;
+      font-size: .825rem;
+      padding: .25rem .5rem;
+      border: 1px solid #268bd2;
+      border-radius: .825rem;
+  }
+}
+
+.article-share-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.article-share-links {
+  a {
+      display: inline-block;
+  }
+}

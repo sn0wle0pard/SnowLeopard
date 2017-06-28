@@ -5,20 +5,19 @@
     date(post.date, null) %></time>
     </div>
 </header>
+
 <section>
     <%- post.content %>
 </section>
 <footer id="article-footer">
-    <div id="share">
-        <%- partial('_widget/share') %>
-    </div>
     <div id="article-tag">
         <% if (post.tags && post.tags.length){ %>
             <% post.tags.forEach(function(tag) { %>
-                <a href='<%= config.root + tag.path %>'>
-                    <%= tag.name %>
-                </a>
+                <a href='<%= config.root + tag.path %>'><%= tag.name %></a>
             <% }); %>
         <% } %>
     </div>
 </footer>
+<div id="share">
+    <%- partial('_widget/share') %>
+</div>
