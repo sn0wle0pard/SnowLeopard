@@ -1,24 +1,22 @@
-<div>
-    <div class="content list">
-    <% page.posts.each(function(post, i) { %>
-        <div class="list-item">
-            <h2 class="list-post-title">
-                <a href="<%- url_for(post.path) %>">
-                    <%-post.title %>
-                </a>
-            </h2>
-            <div class="list-post-date">
-                <time><%-post.date.format('YYYY-MM-DD') %></time>
-            </div>
-        </li>
-    <% }) %>
-    </ul>
+<div class="content list">
+  <% page.posts.each(function(post, i) { %>
+    <div class="list-item">
+      <h2 class="list-post-title">
+        <a href="<%- url_for(post.path) %>">
+          <%-post.title %>
+        </a>
+        </h2>
+          <div class="list-post-date">
+            <time><%-post.date.format('YYYY-MM-DD') %></time>
+          </div>
+      </div>
+  <% }) %>
 </div>
 <% if (page.total > 1){ %>
-    <nav id="page-nav">
-        <%- paginator({
-            prev_text: "__('prev')",
-            next_text: "__('next')"
-        }) %>
-    </nav>
+  <nav id="page-nav">
+    <%- paginator({
+      prev_text: "__('prev')",
+      next_text: "__('next')"
+    }) %>
+  </nav>
 <% } %>

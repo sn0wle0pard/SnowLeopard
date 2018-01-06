@@ -1,21 +1,12 @@
-<header id="header">
-    <div id="header-content">
-        <a id="header-left" href="<%- url_for('/') %>">
-            <div id="header-box">
-                <div id="header-info">
-                    <p id="blog-title"><%= config.title %></p>
-                    <p id="blog-subtitle"><%= config.subtitle %></p>
-                </div>
-            </div>
-        </a>
-        <div id="header-right">
-            <ul id="main-nav">
-            <% for(var i in config.menu){ %>
-                <li class="menu-item">
-                    <a href="<%- url_for(config.menu[i]) %>"><%= __(i) %></a>
-                </li>
-            <% } %>
-            </ul>
-        </div>
-    </div>
+<header class="header">
+  <a class="blog-title" href="<%- url_for('/') %>">
+    <%= config.title %>
+  </a>
+  <ul class="blog-nav">
+    <% for(var i in config.menu){ %>
+      <li class="menu-item">
+        <a href="<%- url_for(config.menu[i]) %>"><%= __(i) %></a>
+      </li>
+    <% } %>
+  </ul>
 </header>
